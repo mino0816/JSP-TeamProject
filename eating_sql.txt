@@ -1,0 +1,108 @@
+CREATE TABLE `rest_info` (
+	`rest_id` INT(10) NOT NULL AUTO_INCREMENT,
+	`rest_name` VARCHAR(45) NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`rest_image1` VARCHAR(255) NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`rest_image2` VARCHAR(255) NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`rest_image3` VARCHAR(255) NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`rest_address` VARCHAR(500) NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`open_time` VARCHAR(100) NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`open_day` VARCHAR(7) NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`rest_call` VARCHAR(45) NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`rest_introduction` TEXT NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`bookmark_count` INT(10) NULL DEFAULT NULL,
+	`review_count` INT(10) NULL DEFAULT NULL,
+	PRIMARY KEY (`rest_id`) USING BTREE
+)
+
+
+CREATE TABLE `member` (
+	`user_id` VARCHAR(45) NOT NULL COLLATE 'euckr_korean_ci',
+	`member_pwd` VARCHAR(45) NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`member_name` VARCHAR(45) NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`member_grade` VARCHAR(1) NULL DEFAULT '0' COLLATE 'euckr_korean_ci',
+	`member_birth` DATE NULL DEFAULT NULL,
+	`member_email` VARCHAR(45) NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`member_datetime` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`user_id`) USING BTREE
+)
+
+
+CREATE TABLE `review` (
+	`review_id` INT(10) NOT NULL AUTO_INCREMENT,
+	`user_id` VARCHAR(45) NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`rest_id` INT(10) NULL DEFAULT NULL,
+	`review_title` VARCHAR(45) NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`review_content` TEXT NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`review_image1` VARCHAR(255) NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`review_image2` VARCHAR(255) NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`review_image3` VARCHAR(255) NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`review_datetime` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`review_id`) USING BTREE,
+	INDEX `tblreview_ibfk_1` (`user_id`) USING BTREE,
+	INDEX `tblreview_ibfk_2` (`rest_id`) USING BTREE,
+	CONSTRAINT `tblreview_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `member` (`user_id`) ON UPDATE NO ACTION ON DELETE CASCADE,
+	CONSTRAINT `tblreview_ibfk_2` FOREIGN KEY (`rest_id`) REFERENCES `rest_info` (`rest_id`) ON UPDATE NO ACTION ON DELETE CASCADE
+)
+
+
+CREATE TABLE `bookmark` (
+	`bookmark` INT(10) NOT NULL AUTO_INCREMENT,
+	`rest_id` INT(10) NULL DEFAULT NULL,
+	`user_id` VARCHAR(45) NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`bookmark_status` TINYINT(3) NULL DEFAULT NULL,
+	PRIMARY KEY (`bookmark`) USING BTREE,
+	UNIQUE INDEX `rest_user_idx` (`rest_id`, `user_id`) USING BTREE,
+	INDEX `tblbookmark_ibfk_2` (`user_id`) USING BTREE,
+	CONSTRAINT `tblbookmark_ibfk_1` FOREIGN KEY (`rest_id`) REFERENCES `rest_info` (`rest_id`) ON UPDATE NO ACTION ON DELETE NO ACTION,
+	CONSTRAINT `tblbookmark_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `member` (`user_id`) ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+
+
+CREATE TABLE `noticeboard` (
+	`notice_id` INT(10) NOT NULL AUTO_INCREMENT,
+	`notice_userid` VARCHAR(45) NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`rest_id` INT(10) NULL DEFAULT NULL,
+	`notice_content` TEXT NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`notice_datetime` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`notice_id`) USING BTREE,
+	INDEX `tblnoticeboard_ibfk_1` (`rest_id`) USING BTREE,
+	INDEX `tblnoticeboard_ibfk_2` (`notice_userid`) USING BTREE,
+	CONSTRAINT `tblnoticeboard_ibfk_1` FOREIGN KEY (`rest_id`) REFERENCES `rest_info` (`rest_id`) ON UPDATE NO ACTION ON DELETE NO ACTION,
+	CONSTRAINT `tblnoticeboard_ibfk_2` FOREIGN KEY (`notice_userid`) REFERENCES `member` (`user_id`) ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+
+CREATE TABLE `menu` (
+	`menu_id` INT(10) NOT NULL AUTO_INCREMENT,
+	`menu_image1` VARCHAR(255) NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`menu_image2` VARCHAR(255) NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`menu_image3` VARCHAR(255) NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`menu_name` VARCHAR(45) NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`menu_price` VARCHAR(45) NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`rest_id` INT(10) NULL DEFAULT NULL,
+	`menu_datetime` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`menu_id`) USING BTREE,
+	INDEX `tblmenu_ibfk_1` (`rest_id`) USING BTREE,
+	CONSTRAINT `tblmenu_ibfk_1` FOREIGN KEY (`rest_id`) REFERENCES `rest_info` (`rest_id`) ON UPDATE NO ACTION ON DELETE CASCADE
+)
+
+
+
+CREATE TABLE `comment` (
+	`comment_id` INT(10) NOT NULL AUTO_INCREMENT,
+	`comment_post_id` INT(10) NULL DEFAULT NULL,
+	`user_id` VARCHAR(45) NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`comment_text` TEXT NULL DEFAULT NULL COLLATE 'euckr_korean_ci',
+	`pos` SMALLINT(5) UNSIGNED NULL DEFAULT NULL,
+	`ref` SMALLINT(5) NULL DEFAULT NULL,
+	`depth` SMALLINT(5) UNSIGNED NULL DEFAULT NULL,
+	`comment_datetime` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`comment_id`) USING BTREE,
+	INDEX `tblcomment_ibfk_1` (`user_id`) USING BTREE,
+	INDEX `tblcomment_ibfk_2` (`comment_post_id`) USING BTREE,
+	CONSTRAINT `tblcomment_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `member` (`user_id`) ON UPDATE NO ACTION ON DELETE NO ACTION,
+	CONSTRAINT `tblcomment_ibfk_2` FOREIGN KEY (`comment_post_id`) REFERENCES `review` (`review_id`) ON UPDATE NO ACTION ON DELETE CASCADE
+)
+
+
+테이블 생성 순서
+rest_info > member > review > bookmark > noticeboard > menu > comment 

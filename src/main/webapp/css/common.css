@@ -1,0 +1,105 @@
+* { -webkit-tap-highlight-color:transparent; }
+
+html { height:100%; scroll-behavior:smooth; }
+html, body, h1, h2, h3, h4, h5, h6, ul, ol, li, div, p, span, img, iframe, select, input, button, a, dl, dt, dd, form, label, table, caption, thead, tbody, tr, th, td { margin:0; padding:0; }
+dl, ul, ol, li { margin:0; padding:0; list-style:none; }
+h1, h2, h3, h4, h5, h6 { font-weight:400; }
+
+body { background:#fff; letter-spacing:-0.5px; overflow-y:scroll; overflow-x:hidden; margin:0; padding:0; font-size:15px; color:#000; font-family:'Noto Sans KR'; }
+textarea, input, select, button, a { font-size:15px; }
+
+img { border:none; vertical-align:top; height:auto !important; max-width:100%;}
+img.over-img { max-width:none !important; }
+
+a:hover { text-decoration:none; color:#000; }
+a:visited { text-decoration:none; color:#000; }
+a:active{ text-decoration:none; color:#000; }
+a:link{ text-decoration:none; color:#000; }
+
+a:focus ,
+button:focus { outline:none; }
+
+table { table-layout:fixed; padding:0; margin:0; width:100%; border-collapse:collapse; border-spacing:0; font-weight:400; }
+
+textarea { overflow-y:scroll; resize:none; }
+input, select, textarea { margin:0; padding:0; box-sizing:border-box; border:1px solid #e8e8e8; font-family:'Noto Sans KR'; vertical-align:middle; }
+button { border:0; cursor:pointer; vertical-align:middle; background:none; font-family:'Noto Sans KR'; }
+
+
+.str-cut { text-overflow:ellipsis; white-space:nowrap; overflow:hidden; display:block; } /* -webkit-line-clamp:4; -webkit-box-orient:vertical; */
+
+.center { text-align:center !important; }
+.left { text-align:left !important; }
+.right { text-align:right !important; }
+
+.mt0 { margin-top:0px !important; }
+.mt5 { margin-top:5px !important; }
+.mt10 { margin-top:10px !important; }
+.mt15 { margin-top:15px !important; }
+.mt20 { margin-top:20px !important; }
+.mt25 { margin-top:25px !important; }
+.mt30 { margin-top:30px !important; }
+.mt35 { margin-top:35px !important; }
+.mt40 { margin-top:40px !important; }
+.mt45 { margin-top:45px !important; }
+.mt50 { margin-top:50px !important; }
+.mt70 { margin-top:70px !important; }
+
+.mb5 { margin-bottom:5px !important; }
+.mb10 { margin-bottom:10px !important; }
+.mb15 { margin-bottom:15px !important; }
+.mb20 { margin-bottom:20px !important; }
+.mb25 { margin-bottom:25px !important; }
+.mb30 { margin-bottom:30px !important; }
+.mb35 { margin-bottom:35px !important; }
+.mb40 { margin-bottom:40px !important; }
+.mb45 { margin-bottom:45px !important; }
+.mb50 { margin-bottom:50px !important; }
+.mb110 { margin-bottom:110px !important; }
+
+.pt0 { padding-top:0px !important; }
+.pt5 { padding-top:5px !important; }
+.pt10 { padding-top:10px !important; }
+.pt15 { padding-top:15px !important; }
+.pt20 { padding-top:20px !important; }
+.pt25 { padding-top:25px !important; }
+.pt30 { padding-top:30px !important; }
+.pt35 { padding-top:35px !important; }
+.pt40 { padding-top:40px !important; }
+.pt45 { padding-top:45px !important; }
+.pt50 { padding-top:50px !important; }
+.pt120 { padding-top:120px !important; }
+
+.pb0 { padding-bottom:0px !important; }
+.pb5 { padding-bottom:5px !important; }
+.pb10 { padding-bottom:10px !important; }
+.pb15 { padding-bottom:15px !important; }
+.pb20 { padding-bottom:20px !important; }
+.pb25 { padding-bottom:25px !important; }
+.pb30 { padding-bottom:30px !important; }
+.pb35 { padding-bottom:35px !important; }
+.pb40 { padding-bottom:40px !important; }
+.pb45 { padding-bottom:45px !important; }
+.pb50 { padding-bottom:50px !important; }
+.pb150 { padding-bottom:150px !important; }
+
+.wid5 { width:5% !important; }
+.wid10 { width:10% !important; }
+.wid15 { width:15% !important; }
+.wid20 { width:20% !important; }
+.wid25 { width:25% !important; }
+.wid30 { width:30% !important; }
+.wid35 { width:35% !important; }
+.wid40 { width:40% !important; }
+.wid45 { width:45% !important; }
+.wid50 { width:50% !important; }
+.wid55 { width:55% !important; }
+.wid60 { width:60% !important; }
+.wid65 { width:65% !important; }
+.wid70 { width:70% !important; }
+.wid75 { width:75% !important; }
+.wid80 { width:80% !important; }
+.wid85 { width:85% !important; }
+.wid90 { width:90% !important; }
+.wid95 { width:95% !important; }
+.wid100 { width:100% !important; }

@@ -1,0 +1,100 @@
+.wrap { width:720px; margin:0 auto; }
+
+/*header*/
+#header { background-color:#FFAE00; height:100px; }
+#header .logo { position:relative; width:150px; margin:0 auto; }
+#header .logo a { display:inline-block; margin-top:13px; }
+#header .login { position:absolute; right:10px; top:31px; }
+#header .login a { font-size:18px; color:#fff; font-weight:800; text-align:center; }
+#header .mypage { position:absolute; right:10px; top:36px; }
+#header .mypage a { display:inline-block; }
+#header .mypage img { width:25px; }
+
+/*footer*/
+#footer { background-color:#666666; height:60px; }
+#footer p { color:#fff; font-size:15px; text-align:center; padding-top:20px; }
+
+/*content*/
+#content {  }
+
+#content .membership .information { overflow:hidden; }
+#content .membership .information { overflow:hidden; }
+
+
+
+/*findid*/
+.findid{height: 800px;}
+.findid p{font-size: 20px;}
+.findid_text{margin: 80px 20px 30px 0;}
+.findid_text span{color: #FFAE00;}
+.findid_text h1{font-size: 40px;}
+.loginbtn { text-align:center; }
+.loginbtn input{width: 600px; background-color: #FFAE00; color: white; margin-top: 40px; height: 60px; border:none; border-radius:10px; font-size:22px; margin-bottom:90px; }
+.loginbtn input.find_login_btn { margin-bottom:0px; }
+.loginbtn input.find_pwd_style { margin-top:20px; background-color:#000; }
+.information p{text-align: left; margin-top: 30px; }
+.information input{ padding:0 10px; float: right; height:55px; width:calc(100% - 160px); border: solid 1px #dddddd; border-radius:10px; margin-left:30px; }
+
+  /*findid_end*/ 
+
+
+  .findid{height: 800px;}
+.findid p{font-size: 20px;}
+.findid_text{margin: 80px 20px 30px 0;}
+.findid_text span{color: #FFAE00;}
+.findid_text h1{font-size: 40px;}
+.sendmail p{text-align: center;}
+
+
+  /*findpwd*/
+
+  .findpwd{height: 800px;}
+.findpwd p{font-size: 20px;}
+.findpwd_text{margin: 80px 20px 30px 0;}
+.findpwd_text span{color: #FFAE00;}
+.findpwd_text h1{font-size: 40px;}
+.information p{text-align: left; margin-top: 30px;}
+
+    /*findpwd_end*/
+    .findpwd{height: 800px;}
+.findpwd p{font-size: 20px;}
+.findpwd_text{margin: 80px 20px 30px 0;}
+.findpwd_text span{color: #FFAE00;}
+.findpwd_text h1{font-size: 40px;}
+.sendmail p{text-align: center;}
+
+    /*membership*/
+
+    
+    .membership p{font-size: 20px;}
+.member_text{margin: 80px 20px 30px 0;}
+.member_text span{color: #FFAE00;}
+.member_text h1{font-size: 40px;}
+.information p{text-align: left; margin-top: 30px;}
+
+
+      /*members_change*/
+      .members_change{height: 800px;}
+    .members_change p{font-size: 20px;}
+.change_text{margin: 80px 20px 30px 0;}
+.change_text span{color: #FFAE00;}
+.change_text h1{font-size: 40px;}
+.information p{ overflow:hidden; width:100%; float:left; text-align: left; margin-top: 30px;}
+
+
+        /*main_login*/
+.login_body{ background-color:#FFAE00; }
+#main_login .main_main_login {position: relative; text-align: center;}
+#main_login .main_main_login .main_login_img{  text-align: center; }
+#main_login .main_main_login .main_login_img img{ padding:90px 0; display:inline-block; width:240px; }
+#main_login .main_main_login .main_login { width:500px; margin:0 auto; }
+#main_login .main_main_login .main_login .login_name { overflow:hidden; margin-bottom:30px; }
+#main_login .main_main_login .main_login .login_name h2{ font-size:30px; color: #FFFFFF; float:left; margin:0 56px; }
+#main_login .main_main_login .main_login .login_name .login_line { height:2px; width:150px; position:relative; background-color:#fff; float:left; margin-top:23px; }
+#main_login .main_main_login .main_login input{ padding:0 10px; position: relative; border-radius: 10px; height: 60px; margin:8px 0; border:none; width:100%; font-size:20px; }
+#main_login .main_main_login .main_login input:nth-child(4){ background-color: #000; color: #FFFFFF; margin-top: 50px; font-size:20px;}
+#main_login .main_main_login .main_login .find_id { color: #FFFFFF; float: left; margin-left: 20px; cursor:pointer;}
+#main_login .main_main_login .main_login .find_pwd { color: #FFFFFF; float: right; margin-right: 20px; cursor:pointer; }
+       
+     
+    

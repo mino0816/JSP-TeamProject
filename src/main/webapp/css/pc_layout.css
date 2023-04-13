@@ -1,0 +1,115 @@
+.wrap { width:1280px; margin:0 auto; }
+
+/*header*/
+#header { background-color:#FFAE00; height:80px; }
+#header .logo { position:relative; width:150px; margin:0 auto; }
+#header .logo a { display:inline-block; margin-top:7px; }
+#header .login { position:absolute; right:20px; top:26px; }
+#header .login a { font-size:18px; color:#fff; font-weight:800; text-align:center; }
+#header .mypage { position:absolute;  right:20px; top:26px; }
+#header .mypage a { display:inline-block; }
+#header .mypage img { width:25px; }
+
+/*content*/
+#content { position:relative; }
+#content .main { margin-left:330px; }
+#content .main h2 { font-weight:800; font-size:28px; padding-top:40px; }
+#content .admin_menu { height:100vh; background-color: #F3F3F3; width:300px; position:fixed; left:0; text-align:center; }
+#content .admin_menu .menu ul li {  }
+#content .admin_menu .menu ul li a { font-size:22px; display:inline-block; padding:10px 0; border-bottom:1px solid #CCCCCC; width:100%; }
+#content .admin_menu .menu ul li a:hover { font-weight:600; background-color:#D9D9D9; }
+#content .admin_menu .menu ul li a.on { font-weight:600; background-color:#D9D9D9; }
+#content .admin_menu .menu ul li .menu_dep { display:none; }
+#content .admin_menu .menu ul li .menu_dep.on { display:block; }
+#content .admin_menu .menu ul li .menu_dep li a { color:#666666; font-size:18px; padding:5px 0; }
+#content .admin_menu .menu ul li .menu_dep li a:hover { font-weight:600; background-color:#FFD988; }
+#content .admin_menu .menu ul li .menu_dep li a.on { font-weight:600; background-color:#FFD988; }
+#content .admin_menulist { overflow:hidden; position:relative; }
+#content .admin_menulist .menulist .menulist_list { }
+#content .admin_menulist .menulist .menulist_list li { overflow:hidden; width:50%; float:left; margin-top:20px; }
+#content .admin_menulist .menulist .menulist_list li .mlist_list_left { float:left; width:200px; height:200px; }
+#content .admin_menulist .menulist .menulist_list li .mlist_list_left img { width:100%; }
+#content .admin_menulist .menulist .menulist_list li .mlist_list_right { margin-left:20px; float:left; margin-top:38px; width:calc(100% - 220px); }
+#content .admin_menulist .menulist .menulist_list li .mlist_list_right h3 { font-size:20px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; width:500px; }
+#content .admin_menulist .menulist .menulist_list li .mlist_list_right p { font-size:23px; color:#CE0000; font-weight:800; margin-top:-2px; }
+#content .admin_menulist .menulist .menulist_list li .mlist_list_right .menulist_btn { margin-top:15px; }
+#content .admin_menulist .menulist .menulist_list li .mlist_list_right .menulist_btn a { color:#fff; padding:3px 18px; font-size:18px; border-radius:5px; display:inline-block; }
+#content .admin_menulist .menulist .menulist_list li .mlist_list_right .menulist_btn a.repair { background-color:#FFAE00; }
+#content .admin_menulist .menulist .menulist_list li .mlist_list_right .menulist_btn a.del { background-color:#000; margin-left:10px; }
+
+#content .admin_addmenu { margin-right:50px; }
+#content .admin_addmenu .addmenu { overflow:hidden; }
+#content .admin_addmenu .addmenu .addpic { overflow:hidden; padding-bottom:50px; margin-bottom:20px; border-bottom:1px solid #AAAAAA; }
+#content .admin_addmenu .addmenu .addpic h3 { font-size:25px; margin-top:30px; margin-bottom:20px; }
+#content .admin_addmenu .addmenu .addpic .pic { width:300px; height:300px; border-radius:10px; float:left; margin-right:25px; cursor:pointer; }
+#content .admin_addmenu .addmenu .addpic .swiper {margin:10px 0 20px;}
+#content .admin_addmenu .addmenu .addpic .swiper .swiper-wrapper {overflow:hidden;}
+#content .admin_addmenu .addmenu .addpic .swiper .swiper-wrapper .swiper-slide {margin-right:20px; width:200px; height:200px; float:left;}
+#content .admin_addmenu .addmenu .addpic .swiper .swiper-wrapper .swiper-slide img { background-size:cover; background-position:center; }
+#content .admin_addmenu .addmenu .addmenu_name {  }
+#content .admin_addmenu .addmenu .addmenu_name label { font-size:23px; }
+#content .admin_addmenu .addmenu .addmenu_name input { width:100%; height:50px; border-radius:10px; border:1px solid #AAAAAA; font-size:17px; padding:0 10px; color:#333333; margin:10px 0 30px 0; }
+#content .admin_addmenu .addmenu .addmenu_price {  }
+#content .admin_addmenu .addmenu .addmenu_price label { font-size:23px; }
+#content .admin_addmenu .addmenu .addmenu_price input { width:100%; height:50px; border-radius:10px; border:1px solid #AAAAAA; font-size:17px; padding:0 10px; color:#333333; margin:10px 0 30px 0; }
+#content .admin_addmenu .addmenu .sub_btn { padding:15px 130px; background-color:#FFAE00; border-radius:10px; color:#fff; font-size:20px; font-weight:600; float:right; border:none; cursor:pointer; }
+
+#content .page_btn { margin-left:300px; position:relative; height:100px; }
+#content .page_btn .paging { position:absolute; left:50%; transform:translate(-50%); bottom:40px; }
+#content .page_btn .paging a { margin:0 5px; border-radius:50px; font-size:15px; display:inline-block; width:24px; height:24px; text-align:center; }
+#content .page_btn .paging a:hover { font-weight:600; }
+#content .page_btn .paging a.on { font-weight:600; background-color:#FFAE00; color:#fff; }
+
+
+/* 가게 등록/수정 */
+#content .admin_rest_regist {margin-right: 50px; }
+#content .admin_rest_regist .rest_regist {overflow: hidden;}
+#content .admin_rest_regist .rest_img{margin-top: 20px;}
+#content .admin_rest_regist .rest_img .swiper .swiper-wrapper {overflow:hidden;}
+#content .admin_rest_regist .rest_img .swiper .swiper-wrapper .swiper-slide { width:200px; height:200px; float:left; margin-right:20px; background-size:cover; background-position:center; }
+#contetn .admin_rest_regist .rest_regist h3 {font-size: 25px; margin-block-start: 30px; margin-bottom: 20px;}
+#content .admin_rest_regist .rest_regist .pic{width: 300px; height: 300px; border-radius: 10px; float: left; margin: 15px 25px 15px 0;}
+#content .admin_rest_regist .rest_address {clear: both; margin-top: 15px;}
+#content .admin_rest_regist .rest_address label{font-size: 23px; }
+#content .admin_rest_regist .rest_address input{ width:100%; height:50px; border-radius:10px; border:1px solid #AAAAAA; font-size:17px; padding:0 10px; color:#333333; margin:10px 0 30px 0;}
+#content .admin_rest_regist .rest_open_time label{font-size: 23px;}
+#content .admin_rest_regist .rest_open_time input{ width:100%; height:50px; border-radius:10px; border:1px solid #AAAAAA; font-size:17px; padding:0 10px; color:#333333; margin:10px 0 30px 0;}
+#content .admin_rest_regist .rest_call label{font-size: 23px;}
+#content .admin_rest_regist .rest_call input{ width:100%; height:50px; border-radius:10px; border:1px solid #AAAAAA; font-size:17px; padding:0 10px; color:#333333; margin:10px 0 30px 0;}
+#content .admin_rest_regist .rest_introduction label{font-size: 23px;}
+#content .admin_rest_regist .rest_introduction input{ width:100%; height:50px; border-radius:10px; border:1px solid #AAAAAA; font-size:17px; padding:0 10px; color:#333333; margin:10px 0 30px 0;}
+#content .admin_rest_regist .rest_regist .sub_btn{padding:15px 130px; background-color:#FFAE00; border-radius:10px; color:#fff; font-size:20px; font-weight:600; float:right; border:none; cursor:pointer; margin-bottom: 15px; }
+/* 가게 등록/수정 */
+
+/* 가게 공지사항 등록/수정 */
+#content .admin_noticeBoard_regist {margin-right: 50px;}
+#content .noticeBoard_regist .noticeBoard_main h3{font-size: 25px; margin-block-start: 30px; margin-bottom: 20px; }
+#content .noticeBoard_regist .noticeBoard_main #noticeBoard{border: 1px solid #AAAAAA; width: 100%; height: 350px; border-radius: 10px; margin-bottom: 20px; padding: 10px;}
+#content .admin_noticeBoard_regist .noticeBoard_regist .noticeBoard_main .sub_btn{padding:15px 130px; background-color:#FFAE00; border-radius:10px; color:#fff; font-size:20px; font-weight:600; float:right; border:none; cursor:pointer; margin-bottom: 15px;}
+/* 가게 공지사항 등록/수정 */
+
+/* 가게 공지사항 리스트 */
+#content .admin_noticeBoard_list{margin-left: 300px; border-bottom: 1px solid #AAAAAA; width: 100%;}
+#content .admin_noticeBoard_list .noticeBoard_main_list h2{padding-left: 50px;}
+#content .admin_noticeBoard_list h3 {font-size: 25px; margin-block-start:30px; margin-bottom: 20px; padding-left:50px;}
+#content .admin_noticeBoard_list .notice_list{border-top: 1px solid #AAAAAA ;}
+#content .admin_noticeBoard_list .notice_list ul{margin: 15px 0 20px 80px; font-size: 18px;}
+#content .admin_noticeBoard_list .notice_list ul li {text-overflow: ellipsis; overflow: hidden; white-space: nowrap; width: 500px;}
+#content .admin_noticeBoard_list .notice_list ul li:nth-child(2){color: #AAAAAA;}
+#content .admin_noticeBoard_list .notice_list .sub_btn{width: 90px; height: 30px; position: relative; left: 850px;}
+#content .admin_noticeBoard_list .notice_list ul .sub_btn1{background-color: #FFAE00; color: #FFFFFF; border-radius: 10px;}
+#content .admin_noticeBoard_list .notice_list ul .sub_btn2{background-color: #000000; color: #FFFFFF; border-radius: 10px;}
+/* 가게 공지사항 리스트 */
+
+/*관리자 로그인 페이지*/
+.login_body{width: 100%;  background-color: #FFAE00; position: absolute;}
+#admin_login .admin_main_login {position: relative; top: 300px; left: 250px; width: 1400px; height: 445px; text-align: center;}
+#admin_login .admin_main_login .main_login_img{display: inline-block; float: left; width: 700px; box-sizing: border-box; height: 445px;}
+#admin_login .admin_main_login .main_login_img img{width: 500px; padding-top: 70px;}
+#admin_login .admin_main_login .main_login{float: right; width: 700px; box-sizing: border-box; height: 445px;}
+#admin_login .admin_main_login .main_login h2{font-size: 35px; color: #FFFFFF;}
+#admin_login .admin_main_login .main_login input{display:block; width: 650px; position: relative; left: 25px; border-radius: 10px; height: 60px; margin: 15px;}
+#admin_login .admin_main_login .main_login input:nth-child(4){background-color: #000; color: #FFFFFF; margin-top: 50px; font-size: 23px; border:none;}
+#admin_login .admin_main_login .main_login p:nth-child(5){ color: #FFFFFF; float: left; margin-left: 40px;}
+#admin_login .admin_main_login .main_login p:nth-child(6){ color: #FFFFFF; float: right; margin-right: 20px;}
+/*관리자 로그인 페이지*/

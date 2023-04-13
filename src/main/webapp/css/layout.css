@@ -1,0 +1,184 @@
+ .wrap { width:720px; margin:0 auto; }
+
+/*header*/
+#header { background-color:#FFAE00; height:80px; }
+#header .logo { position:relative; width:150px; margin:0 auto; }
+#header .logo a { display:inline-block; margin-top:7px; }
+#header .login { position:absolute; right:20px; top:26px; }
+#header .login a { font-size:18px; color:#fff; font-weight:800; text-align:center; }
+#header .mypage { position:absolute;  right:20px; top:26px; }
+#header .mypage a { display:inline-block; }
+#header .mypage img { width:25px; }
+
+/*footer*/
+#footer { background-color:#666666; height:60px; }
+#footer p { color:#fff; font-size:15px; text-align:center; padding-top:20px; }
+
+/*content*/
+#content { position:relaitve; overflow:hidden; }
+
+/*content_메인페이지*/
+/* #content .mainpage .wrap { overflow:hidden; } */
+#content .mainpage .mainpage_swiper { position:relative; padding:40px 0; padding-left:50px; width:100%; }
+#content .mainpage .mainpage_swiper>h4 { font-size:40px; font-weight:600; line-height:48px; padding:40px 0 30px; }
+#content .mainpage .mainpage_swiper h4 span { color:#FFAE00; } 
+#content .mainpage .mainpage_swiper .swiper { width:1200px; height:100%; }
+#content .mainpage .mainpage_swiper .swiper .swiper-wrapper { overflow:hidden; height:371px; }
+#content .mainpage .mainpage_swiper .swiper .swiper-wrapper .swiper-slide { text-align:center; width:220px !important; margin:0 10px; float:left; }
+#content .mainpage .mainpage_swiper .swiper .swiper-wrapper .swiper-slide .mainswiper_img { background-size:cover; background-position:top; width:220px; height:300px; background-color:#000; border-radius:10px; }
+#content .mainpage .mainpage_swiper .swiper .swiper-wrapper .swiper-slide h4 { font-size:23px; font-weight:600; padding-top:10px; }
+#content .mainpage .mainpage_swiper .swiper .swiper-wrapper .swiper-slide p { font-size:18px; }
+
+#content .mainpage .store_more { padding:10px 0 20px; overflow:hidden; margin-right:50px; }
+#content .mainpage .store_more a { font-size:20px; color:#666666; float:right; }
+
+#content .mainpage .mainpage_review { padding:0 50px; }
+#content .mainpage .mainpage_review>h4 { font-size:40px; font-weight:600; line-height:48px; padding:80px 0 30px; }
+#content .mainpage .mainpage_review>h4 span { color:#FFAE00; } 
+#content .mainpage .mainpage_review .review_list { overflow:hidden; }
+#content .mainpage .mainpage_review .review_list ul li { border-bottom:1px solid #ddd; overflow:hidden; padding:20px 0; }
+#content .mainpage .mainpage_review .review_list ul li:last-child { border-bottom:none; }
+#content .mainpage .mainpage_review .review_list ul li .review_img { width:180px; height:180px; background-color:#000; border-radius:10px; float:left; }
+#content .mainpage .mainpage_review .review_list ul li .review_txt { padding-left:30px; float:left; width:400px; margin-top:20px; }
+#content .mainpage .mainpage_review .review_list ul li .review_txt h4 { font-size:24px; font-weight:600; padding:10px 0; }
+#content .mainpage .mainpage_review .review_list ul li .review_txt p { text-overflow:ellipsis; overflow:hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
+
+#content .mainpage .reivew_more { display:inline-block; margin:0 auto; margin-top:20px; margin-bottom:80px; }
+#content .mainpage .reivew_more a { font-size:22px; padding:15px; width:600px; margin:0 auto; background-color:#FFAE00; color:#fff; display:inline-block; border-radius:10px; text-align:center; margin-left:50px; }
+
+/*content_리뷰 작성페이지 */
+#content .wrap .review_write_header {margin: 15px 0 10px 20px;}
+#content .wrap .review_write_header img{float: left; width: 25px; height: 25px; margin-right: 10px;}
+#content .wrap .filreview_write_headerl_in p {font-size: 20px;}
+#content .wrap .review_img .swiper { width:100%; height:100%; overflow:hidden; }
+#content .wrap .review_img .swiper .swiper-wrapper { overflow:hidden; height:200px; width:1540px; }
+#content .wrap .review_img .swiper .swiper-wrapper .swiper-slide { width:200px !important; border-radius:10px; text-align: center; float:left; margin-right:20px; overflow:hidden; }
+#content .wrap .review_img .swiper .swiper-wrapper .swiper-slide img { display:block; }
+#content .wrap .review_img .swiper .swiper-pagination { float:right; color:#666666; font-size:20px; padding:10px 0; }
+
+#content .wrap .review_title input{border-style: none; margin: 10px 0 10px 15px; font-size: 25px;}
+#content .wrap .review_content input{height: 465px; width: 100%; margin-top: -7px; margin-bottom: -7px; border-style: none; font-size: 23px; color: #cccccc;}
+#content .wrap .sub_btn{background-color: #FFAE00; position: relative; margin: 15px 0px 15px 210px; width: 300px; height: 60px; border-radius: 10px; font-size: 25px; color: #ffffff; font-weight: bold;}
+
+/*content_마이페이지*/
+#content .mypage_list .mypage_profile { overflow:hidden; padding:60px 50px; }
+#content .mypage_list .mypage_profile .profile_pic { width:150px; height:150px; border-radius:150px; background:#000; float:left; }
+#content .mypage_list .mypage_profile p { float:left; font-size:25px; font-weight:400; padding:45px 20px; }
+#content .mypage_list .mypage_profile p span { font-size:40px; font-weight:600; }
+#content .mypage_list .mypage_list { margin-bottom:80px; }
+#content .mypage_list .mypage_list h3 { font-size:25px; font-weight:600; padding:40px 50px 20px 50px; }
+#content .mypage_list .mypage_list ul li { overflow:hidden; padding:13px 50px; }
+#content .mypage_list .mypage_list ul li a { overflow:hidden; display:inline-block; }
+#content .mypage_list .mypage_list ul li a img { float:left; width:35px; }
+#content .mypage_list .mypage_list ul li a p { float:left; font-size:22px; padding-left:10px; }
+
+/*content_마이페이지 북마크*/
+#content .mypage_bookmark { overflow:hidden; margin-bottom:60px; }
+#content .mypage_bookmark .bookmark_list { padding:0 50px; }
+#content .mypage_bookmark .bookmark_list h3 { font-size:25px; padding:60px 0 40px 10px; }
+#content .mypage_bookmark .bookmark_list ul li { float:left; width:48%; margin:1%; text-align:center; cursor:pointer; margin-bottom:10px; }
+#content .mypage_bookmark .bookmark_list ul li .book_pic { width:280px; height:280px; border-radius:10px; background-color:#000; margin:0 auto; background-size:cover; background-position:center; }
+#content .mypage_bookmark .bookmark_list ul li h4 { font-size:23px; font-weight:600; padding-top:10px; }
+#content .mypage_bookmark .bookmark_list ul li p { font-size:18px; }
+
+/*content_마이페이지 리뷰*/
+#content .mypage_review { margin-bottom:60px; }
+#content .mypage_review .review_list { overflow:hidden; padding:0 50px; }
+#content .mypage_review .review_list h3 { padding:60px 0; font-size:25px; line-height:39px; }
+#content .mypage_review .review_list h3 .review_num { font-size:40px; font-weight:800;  }
+#content .mypage_review .review_list ul li { border-bottom:1px solid #ddd; overflow:hidden; padding:20px 0; }
+#content .mypage_review .review_list ul li:last-child { border-bottom:none; }
+#content .mypage_review .review_list ul li .review_img { width:180px; height:180px; background-color:#000; border-radius:10px; float:left; }
+#content .mypage_review .review_list ul li .review_txt { padding-left:30px; float:left; width:400px; margin-top:20px; }
+#content .mypage_review .review_list ul li .review_txt h4 { font-size:24px; font-weight:600; padding:10px 0; }
+#content .mypage_review .review_list ul li .review_txt p { text-overflow:ellipsis; overflow:hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
+
+/*메인페이지 가게목록*/
+#content .mainpage_list { margin-top:60px; }
+
+/* 리뷰 작성 페이지 */
+#content .wrap .review_write_header {margin: 15px 0 10px 20px;}
+#content .wrap .review_write_header img{float: left; width: 25px; height: 25px; margin-right: 10px;}
+#content .wrap .filreview_write_headerl_in p {font-size: 20px;}
+#content .wrap .review_img img{width: 250px; height: 250px; overflow: auto;}
+#content .wrap .review_img p{text-align: right; margin: 10px 15px 10px 0px; color: #666666;}
+#content .wrap .review_title input{border-style: none; margin: 10px 0 10px 15px; font-size: 25px;}
+#content .wrap .review_content input{height: 465px; width: 100%; margin-top: -7px; margin-bottom: -7px; border-style: none; font-size: 23px; color: #cccccc;}
+#content .wrap .sub_btn{background-color: #FFAE00; position: relative; margin: 15px 0px 15px 210px; width: 300px; height: 60px; border-radius: 10px; font-size: 25px; color: #ffffff; font-weight: bold;}
+/* 리뷰 작성 페이지 */
+
+/*content_리뷰목록*/
+#content .review .review_list .search {position: relative; margin-top: 5px;}
+#content .review .review_list .search input {width: 100%; border: 1px solid #000000; border-radius: 15px; height: 40px; background-color: #DDDDDD; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
+#content .review .review_list .search .icon {position : absolute; width: 17px; top: 10px; left: 12px; margin: 0;}
+#content .review .review_list .review_img{overflow: hidden;}
+#content .review .review_list .review_img .img{width: 31%; height: 180px; margin: 1%; float: left; background-size:cover; background-position:center; background-color: black;}
+
+/*content_리뷰상세페이지*/
+#content .review_detaile .swiper-slide {  }
+#content .review_detaile .swiper-slide .img{width: 100%; height:360px; background-color: #dddddd; background-size:cover; background-position:center;}
+#content .review_detaile .review_write{}
+.swiper-pagination-bullet-active { background-color:#FFAE00 !important; }
+#content .review_detaile .review_write { overflow:hidden; }
+#content .review_detaile .review_write .writer { padding:0 50px; }
+#content .review_detaile .review_write .writer .writer_profile { overflow:hidden; border-bottom:1px solid #dddddd; padding-bottom:6px; }
+#content .review_detaile .review_write .writer .writer_profile .icon{width:35px; height:35px; border-radius: 100px; background-color: black; float:left; margin-right:10px; margin-top:14px; }
+#content .review_detaile .review_write .writer .writer_profile p { float:left;padding:15px 0; font-size:18px; }
+/* #content .review_detaile .review_write p{border-bottom: solid 1px #bbb; } */
+#content .review_detaile .review_write .writer h1 { font-size:22px; font-weight:600; padding:15px 0; }
+#content .review_detaile .review_write .writer h1 span{float: right; color: #666666; font-size: 15px; margin-right: 10px; margin-top: 5px; font-weight:100; }
+#content .review_detaile .review_write .writer h4 { font-size:18px; line-height:20px; padding:10px 0 40px; }
+/* #content .review_detaile .review_write .review { padding:10px 50px; } */
+content .review_detaile .review_write .review
+#content .review_detaile .review_write .review img{width: 25px;}
+#content .review_detaile .review_write .review h5{background-color: #dddddd; font-size:20px; padding-left:50px; padding-top:10px; padding-bottom:10px;}
+#content .review_detaile .review_write .review h5 img { margin-top:6px; margin-right:8px; }
+#content .review_detaile .review_write .review h4 { padding-left:50px; font-size:18px; padding-top:10px; padding-bottom:10px; }
+#content .review_detaile .review_write .review h4 span{margin-left: 10px; color: #666666; font-size:15px;}
+#content .review_detaile .review_write .review h6 { font-size:16px; padding:5px 50px 15px; overflow:hidden; }
+#content .review_detaile .review_write .review h6 span{float: right; color: #666666; font-size: 10px; margin-right: 10px; position:relative; bottom:-10px; font-size:15px;}
+#content .review_detaile .review_write .review .myreview{background-color: #dddddd;}
+#content .review_detaile .review_write .review .reply{margin-left: 50px;}
+#content .review_detaile .review_write .review .reply input{margin:20px 0;}
+#content .review_detaile .review_write .review .reply #input {width: 510px; border: 1px solid #bbb; border-radius: 5px; height:45px; background-color: #dddddd; padding:10px; border:none; }
+#content .review_detaile .review_write .review .reply #button{background-color: #FFAE00; color: white; width: 90px; margin-left: 10px; height: 45px; border-radius:5px; border:none; font-size:16px; }
+
+/*가게 상세정보_홈
+#content .store_list .main_pic { height: 400px;}
+#content .store_list .rname{font-size: 35; font-weight: bold; margin-top: 32px; text-align: center;}
+#content .store_list .bookmarkshare_box { text-align: center; width: 100%; }
+#content .store_list .bookmarkshare_box .bookmarkshare{width: 174px; height: 91px; display: inline-block; text-align: center; position: relative; margin: auto;}
+#content .store_list .bookmarkshare_box .bookmarkshare .bookmark_box{ width: 45%; display: inline-block;}
+.bookmark{height: 45px; width: 45px;position: relative;}
+.share_box{ width:45%; display: inline-block;}
+.share{height: 45px; width: 45px;position: relative; }
+.lists {margin-top: 45px;}
+.lists hr { margin-bottom:0; }
+.lists ul li { width: 24.5%; display: inline-block; height: 60px; text-align: center; margin: 0; padding: 0; word-spacing: 0;}
+.list1 {background-color: #DDDDDD;}
+.lists ul li a{line-height: 60px;}
+.info { height: 179px; background-color: #DDDDDD; padding-top: 21px; }
+.info div { margin-left: 52px; margin-bottom: 15px; }
+
+#more_attention { font-size: 25px; font-weight: bold; margin-top: 40px; margin-left: 53px;}
+#more_attin { margin-top: 38px;}
+
+.notice_ul li{height: 94px;}
+.notice_ul li div { margin-top: 18px; margin-left: 53px;}
+.notice_ul li div h4 {color: #AAAAAA;padding-top: 6px;}
+.attention_more_box {margin-top: 20px; text-align: center;}
+.attention_more_box a {height: 60px; width: 614px; background-color: #DDDDDD; display: inline-block; text-align: center;}
+.attention_more_box h2{ text-align: center; line-height: 60px;}
+.storemore_menu { margin-top: 96px; margin-left: 53px;}
+.storemore_menu>h3{ font-size: 25px; margin-bottom: 7px; }
+.menulist{width: 30%; display: inline-block;}
+.menulist h3{text-align: center;}
+
+.morestore_review {margin-top: 80px;}
+.review_lists { margin-top: 30px;}
+.review_lists img{ display: inline-block; border-radius: 10px; width: 200px; height: 200px;}
+.reviewcontentsbox { display: inline-block; width: 374px; height: 172px; margin-left: 39px; margin-top: 20px; }
+.morestore_review h2 { font-size: 25px; font-weight: bold; }
+.reviewcontentsbox h3 { font-size: 18px; margin-top: 13px;}
+.review_lists hr { margin-top: 28px;}
+*/
