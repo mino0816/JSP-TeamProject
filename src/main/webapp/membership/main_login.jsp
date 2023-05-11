@@ -16,12 +16,12 @@
 		if (document.loginFrm.user_id.value == "") {
 			alert("아이디를 입력해 주세요.");
 			document.loginFrm.user_id.focus();
-			return;
+			return false;
 		}
 		if (document.loginFrm.member_pwd.value == "") {
 			alert("비밀번호를 입력해 주세요.");
 			document.loginFrm.member_pwd.focus();
-			return;
+			return false;
 		}
 		document.loginFrm.submit();
 	}
@@ -40,9 +40,9 @@
                         <h2>LOGIN</h2>  
                         <div class="login_line right"></div>
                     </div>   
-                    <input type="text" name="user_id" placeholder="아이디를 입력해주세요." value="aaa">
-                    <input type="password" name="member_pwd" placeholder="비밀번호를 입력해주세요." value="1234">
-                    <input type="submit" value="로그인" onclick="loginCheck()" style="cursor:pointer;">
+                    <input type="text" name="user_id" placeholder="아이디를 입력해주세요.">
+                    <input type="password" name="member_pwd" placeholder="비밀번호를 입력해주세요." >
+                    <input type="button" value="로그인" onclick="loginCheck()" style="cursor:pointer;">
                     <input type="button" value="회원가입" onClick="javascript:location.href='membership.jsp'" style="cursor:pointer;">
                     <input type="button" value="회원수정" onClick="javascript:location.href='member_update.jsp'" style="background:red; cursor:pointer; color:#fff;">
                     <p class="find_id" onClick="javascript:location.href='findid.jsp'">아이디 찾기</p>

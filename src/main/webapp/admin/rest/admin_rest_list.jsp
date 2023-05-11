@@ -5,7 +5,6 @@
 <jsp:useBean id="mMgr" class="project.restInfo.RestInfoMgr" />
 
 <%
-
 	String user_id = (String)session.getAttribute("user_id");
 	int rest_id = 0;
 	if(request.getParameter("rest_id")!=null){

@@ -1,4 +1,7 @@
+<%@page import="project.bookmark.BookmarkBean"%>
+<%@page import="project.bookmark.BookmarkMgr"%>
 <%@page import="project.util.UtilMgr"%>
+<%@page import="project.restInfo.RestInfoBean"%>
 <%@page import="project.restInfo.RestInfoBean"%>
 <%@page import="java.util.Vector"%>
 <%@ page contentType="text/html; charset=UTF-8"%>
@@ -6,6 +9,7 @@
 
 <%
 		Vector<RestInfoBean> rvlist = mMgr.showStorelist();
+
 %>
 <!DOCTYPE html>
 <html lang="ko">
@@ -74,6 +78,7 @@
             
                 <div class="bookmark_list">
                 <%
+              
                 		for(int i=0;i<rvlist.size();i++){  
                			RestInfoBean rbean = rvlist.get(i);
                	%>		
@@ -81,9 +86,10 @@
                     <ul>
                     <%}%>
                         <li>
-                            <div class="book_pic">
+                            <div class="book_pic" >
                             <a href="info_home.jsp?url=<%=rbean.getRest_id()%>">
-                            <img src="../img/rest_info/<%=rbean.getRest_image1()%>">
+                           <%--  <img src="../img/rest_info/<%=rbean.getRest_image1()%>"> --%>
+                            <div class="book_pic_list" style="background-image: url('../img/rest_info/<%=rbean.getRest_image1()%>')"></div>
                             </a>
                             </div>
                             <h4><%=rbean.getRest_name() %></h4>

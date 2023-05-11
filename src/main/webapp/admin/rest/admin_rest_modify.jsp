@@ -2,6 +2,7 @@
 <%@page import="project.restInfo.RestInfoBean"%>
 <%@page language="java" contentType="text/html; charset=UTF-8"%>
 <jsp:useBean id="mgr" class="project.restInfo.RestInfoMgr"/>
+
 <%
 	if (!session.getAttribute("user_id").equals("admin")) {
 	    response.sendRedirect("../../membership/admin_login.jsp");
@@ -142,7 +143,7 @@
                 </div>
                 <div class="rest_address">
                     <label for="rest_info">주소</label>
-                    <input id="rest_addres" name="rest_addres" value="<%=bean.getRest_address()%>" >
+                    <input id="rest_address" name="rest_address" value="<%=bean.getRest_address()%>" >
                 </div>
                 <div class="rest_open_time">
                     <label for="rest_info">영업 시간</label>

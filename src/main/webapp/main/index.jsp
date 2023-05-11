@@ -1,4 +1,3 @@
-
 <%@page import="project.bookmark.BookmarkBean"%>
 <%@page import="project.bookmark.BookmarkMgr"%>
 <%@page contentType="text/html; charset=UTF-8"%>
@@ -57,7 +56,7 @@
         <article class="header">
             <div class="wrap">
                 <h1 class="logo">
-                    <a href="#"><img src="../img/icons/logo.png" alt="EATING_LOGO"></a>
+                    <a href="index.jsp"><img src="../img/icons/logo.png" alt="EATING_LOGO"></a>
                 </h1>
                 <div class="mypage">
                     <a href="../mypage/mypage.jsp"><img src="../img/icons/mypage.png" alt="MYPAGE"></a>

@@ -80,6 +80,8 @@
 #content .mypage_bookmark .bookmark_list ul li .book_pic { width:280px; height:280px; border-radius:10px; background-color:#000; margin:0 auto; background-size:cover; background-position:center; }
 #content .mypage_bookmark .bookmark_list ul li h4 { font-size:23px; font-weight:600; padding-top:10px; }
 #content .mypage_bookmark .bookmark_list ul li p { font-size:18px; }
+/**/
+#content .mypage_bookmark .bookmark_list ul li .book_pic .book_pic_list{background-size: cover; background-position: top; width: 280px; height: 280px; background-color: #000; border-radius: 10px;}
 
 /*content_마이페이지 리뷰*/
 #content .mypage_review { margin-bottom:60px; }

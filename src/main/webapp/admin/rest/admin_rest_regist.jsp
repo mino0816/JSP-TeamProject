@@ -139,7 +139,7 @@
                 </div>
                 <div class="rest_address">
                     <label for="rest_info">주소</label>
-                    <input type="text" id="rest_address" name="rest_addres">
+                    <input type="text" id="rest_address" name="rest_address">
                 </div>
                 <div class="rest_open_time">
                     <label for="rest_info">영업 시간</label>

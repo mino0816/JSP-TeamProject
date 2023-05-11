@@ -1,4 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
+
 <jsp:useBean id="mMgr" class="project.menu.MenuMgr" />
 <%
 		if (!session.getAttribute("user_id").equals("admin")) {

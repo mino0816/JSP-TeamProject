@@ -4,5 +4,4 @@
 <%
 	mgr.modifyRestinfo(request);
 	response.sendRedirect("admin_rest_list.jsp");
-
 %>
