@@ -3,7 +3,7 @@
 <%@page contentType="text/html; charset=UTF-8"%>
 <jsp:useBean id="rmgr" class="project.review.ReviewMgr"/>
 <jsp:useBean id="rbean" class="project.review.ReviewBean"/>
-<%
+<% 
 	Vector<ReviewBean> vlist = rmgr.showReviews(-1);
 
 	if(request.getParameter("keyword")==null){

@@ -1,4 +1,4 @@
-<%@page import="project.util.UtilMgr"%>
+<%@page import="project.util.UtilMgr"%> 
 <%@page import="project.bookmark.BookmarkMgr"%>
 <%@page import="project.restInfo.RestInfoBean"%>
 <%@page import="project.restInfo.RestInfoMgr"%>
@@ -182,8 +182,8 @@ function clip(){
             <div class="info_noticebox">
                 <div id="info_notice"><h3>공지사항</h3></div>
 
-                <div id="info_content">
-                    <ul class="notice_ul">
+               <!--  <div id="info_content">
+                    <ul class="notice_ul"> -->
                     
 <%
 	for(int i=0; i<vlist.size();i++){

@@ -87,6 +87,9 @@ margin: auto;}
 .info_noticebox{
     background-color: #DDDDDD   ;
 }
+.info_noticebox h3 {padding: 40px 0 40px 0;
+    font-size: 25px;
+    font-weight: bold;}
 #info_notice { 
     font-size: 25px;
     font-weight: bold;

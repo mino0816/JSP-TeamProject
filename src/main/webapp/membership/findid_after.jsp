@@ -1,7 +1,7 @@
 <!-- findid_after / 아이디찾기 결과창 -->
 <%@ page contentType="text/html; charset=UTF-8"%>
 <title>EATING</title>
-
+ 
 <link rel="stylesheet" type="text/css" href="../css/common.css">
 <link rel="stylesheet" type="text/css" href="../css/font.css">
 <link rel="stylesheet" type="text/css" href="../css/layout2.css">

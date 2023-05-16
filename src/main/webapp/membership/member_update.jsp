@@ -7,7 +7,7 @@
 	if(user_id==null){
 		response.sendRedirect("main_login.jsp");
 		return;
-	}
+	} 
 	MemberBean bean = mgr.getMember(user_id);
 %>
 

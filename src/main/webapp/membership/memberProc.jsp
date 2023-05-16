@@ -3,7 +3,7 @@
 <jsp:useBean id="mgr" class="project.membership.MemberMgr"/>
 <jsp:useBean id="bean" class="project.membership.MemberBean"/>
 <%request.setCharacterEncoding("UTF-8"); %>
-<jsp:setProperty property="*" name="bean"/>
+<jsp:setProp erty property="*" name="bean"/>
 <%
 	boolean result = mgr.insertMember(bean);
 	String msg = "양식에 맞게 작성해주세요.";

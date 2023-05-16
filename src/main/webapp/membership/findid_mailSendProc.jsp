@@ -2,7 +2,7 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
 <jsp:useBean id="mgr" class="project.membership.id_MailSend"/>
 <%request.setCharacterEncoding("UTF-8"); %>
-<%
+<% 
 	String member_name = request.getParameter("member_name");
 	String member_email = request.getParameter("member_email");
 	boolean result = mgr.sendId(member_name, member_email);

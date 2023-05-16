@@ -1,6 +1,6 @@
 <!-- findpwd / 비밀번호찾기 -->
 <%@ page contentType="text/html; charset=UTF-8"%>
-
+ 
 <title>EATING</title>
 
 <link rel="stylesheet" type="text/css" href="../css/common.css">

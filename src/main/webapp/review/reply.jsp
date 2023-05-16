@@ -1,6 +1,6 @@
 	<!-- 대댓글 -->
 <!-- review_detaile.jsp에서 건너옴 -->
-
+ 
 <%@page import="project.comment.CommentBean"%>
 <%@page contentType="text/html; charset=UTF-8"%>
 <%request.setCharacterEncoding("UTF-8");%>

@@ -3,7 +3,7 @@
 <%@page import="project.menu.MenuBean"%>
 <%@page import="java.util.Vector"%>
 <jsp:useBean id="mMgr" class="project.menu.MenuMgr" />
-<%
+<% 
 		if(request.getParameter("rest_id")!=null){
 			int rest_id =  Integer.parseInt(request.getParameter("rest_id")) ;
 			session.setAttribute("rest_id", rest_id);

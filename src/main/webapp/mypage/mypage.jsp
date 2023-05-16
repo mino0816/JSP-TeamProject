@@ -9,7 +9,7 @@
 	    return;
 	}
 	String user_id = (String) session.getAttribute("user_id");
-%>
+%> 
     
 <!DOCTYPE html>
 <html lang="ko">

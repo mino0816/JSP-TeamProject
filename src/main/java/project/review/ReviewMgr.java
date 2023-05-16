@@ -55,11 +55,13 @@ public class ReviewMgr {
 				String review_image1 = "../img/review/" + rs.getString("review_image1");//메인사진
 				String review_image2 = "../img/review/" + rs.getString("review_image2");//사진2
 				String review_image3 = "../img/review/" + rs.getString("review_image3");//사진3
+				//String thumbnail = rs.getString("review_image1");
 				review.setReview_image1(review_image1);
 				review.setReview_image2(review_image2);
 				review.setReview_image3(review_image3);
+				
 				review.setRest_id(rs.getInt("rest_id"));
-			
+				//System.out.println(thumbnail);
 				review.setReview_datetime(rs.getString("Review_datetime"));
 				vlist.addElement(review);
 			}

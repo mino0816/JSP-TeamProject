@@ -1,6 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
 <jsp:useBean id="mgr" class="project.restInfo.RestInfoMgr"/>
-<%
+<% 
 if (!session.getAttribute("user_id").equals("admin")) {
 	    response.sendRedirect("../../membership/admin_login.jsp");
 	    return;

@@ -3,7 +3,7 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
 <jsp:useBean id="mgr" class="project.membership.MemberMgr"/>
 <%request.setCharacterEncoding("UTF-8"); %>
-<%
+<% 
 	  String cPath = request.getContextPath();
 	  String user_id = request.getParameter("user_id");
 	  String member_pwd = request.getParameter("member_pwd");

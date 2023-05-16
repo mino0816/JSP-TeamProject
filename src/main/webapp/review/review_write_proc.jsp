@@ -3,7 +3,7 @@
 <jsp:useBean id="rmgr" class="project.review.ReviewMgr"/>
 <jsp:useBean id="bean" class="project.review.ReviewBean"/>
 
-<%
+<% 
 request.setCharacterEncoding("UTF-8");
 
 /* 

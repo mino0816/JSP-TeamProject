@@ -6,6 +6,7 @@
 <%@page import="java.util.Vector"%>
 <jsp:useBean id="mMgr" class="project.menu.MenuMgr" />
 <jsp:useBean id="rmgr" class="project.restInfo.RestInfoMgr"/>		
+
 <%
 /* 	if(request.getParameter("rest_id")!=null){
 		int rest_id =  Integer.parseInt(request.getParameter("rest_id")) ;

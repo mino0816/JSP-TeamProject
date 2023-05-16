@@ -5,7 +5,7 @@
 <%@page import="project.bookmark.BookmarkBean"%>
 <%@page import="project.bookmark.BookmarkMgr"%>
 <%@page contentType="text/html; charset=UTF-8"%>
-
+ 
 <%
 	TestMgr mgr = new TestMgr();
 	Vector<TestBean> vlist =  mgr.get();

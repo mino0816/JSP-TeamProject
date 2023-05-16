@@ -1,4 +1,4 @@
-<%@page import="project.util.UtilMgr"%>
+<%@page import="project.util.UtilMgr"%> 
 <%@page import="project.review.ReviewMgr"%>
 <%@page import="project.menu.MenuBean"%>
 <%@page import="project.noticeBoard.NoticeBoardBean"%>
@@ -297,14 +297,17 @@ for (int i=0; i<menu_vlist.size(); i++){
 	String mainImg = review_bean.getReview_image1();
 %>                      
                             <li class="review_lists review_list<%=i%>">
-                            <a href="../review/review_detaile.jsp?url=<%=review_bean.getReview_id()%>">
-                                <img src="<%=mainImg%>" alt="메뉴사진<%=i+1%>">
-                             </a>
+                            <div class="test">
+                            <a class="test2" href="../review/review_detaile.jsp?url=<%=review_bean.getReview_id()%>">
+                                <img src="<%=mainImg%>" alt="메뉴사진<%=i+1%>"></img>
+                            </a>
+                           
                                 <div class="reviewcontentsbox">
                                     <h2><%=review_bean.getReview_title() %></h2>
                                     <h3><%=review_bean.getReview_content() %>
                                     </h3>
                                 </div>
+                              </div>
                                 <hr style="color: #D9D9D9;">
                             </li>
 

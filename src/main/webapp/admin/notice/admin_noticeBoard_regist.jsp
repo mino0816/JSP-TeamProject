@@ -1,4 +1,4 @@
-<%@page import="project.restInfo.RestInfoBean"%>
+<%@page import="project.restInfo.RestInfoBean"%> 
 <%@page import="java.util.Vector"%>
 <%@ page contentType="text/html; charset=UTF-8"%>
 <jsp:useBean id="mgr" class="project.noticeBoard.NoticeBoardMgr"/>

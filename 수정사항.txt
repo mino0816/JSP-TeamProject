@@ -1,4 +1,4 @@
-2023/05/11
+2023.05.11
 어드민 로그인 실패시 alert창 띄우기 
 	프로젝트 경로 수정, 가게등록시 주소값 및 사진 안들어오는거 수정
 	메뉴등록 금액 입력시 에러 varchar 타입을 int타입으로 바꿔줌
@@ -8,3 +8,15 @@
 	로그인 타입이 submit이였는데 button으로 바꿔줌
 가게	더보기시 가게 이미지 안나옴 수정
 	
+2023.05.12
+info_noticeboard.jsp 디자인 수정
+info_review 리뷰작성하기 버튼 디자인 수정
+
+2023.05.16
+info_home.jsp 및 info_review.jsp 에 리뷰 null사진 가져오기
+ifo_review.jsp에서 리뷰를 클릭하면 null값들이 넘어옴
+
+-----수정 필요
+
+	--- index.jsp info_review.jsp 리뷰 사진 div로 고쳐서 이미지 다보이게하기
+review_detail.jsp에 로그아웃 상태일때 댓글칸 조금 띄우기

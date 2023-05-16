@@ -5,7 +5,7 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
 <jsp:useBean id="mMgr" class="project.menu.MenuMgr" />
 <jsp:useBean id="rmgr" class="project.restInfo.RestInfoMgr"/>
-<%
+<% 
 		int rest_id = 0;
 		if(request.getParameter("rest_id")!=null){
 			rest_id =  Integer.parseInt(request.getParameter("rest_id")) ;

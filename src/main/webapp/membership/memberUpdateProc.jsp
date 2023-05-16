@@ -4,7 +4,7 @@
 <jsp:useBean id="bean" class="project.membership.MemberBean"/>
 <%request.setCharacterEncoding("UTF-8"); %>
 <jsp:setProperty property="*" name="bean"/>
-<%
+<% 
 	boolean result = mgr.updateMember(bean);
 	if(result){
 %>

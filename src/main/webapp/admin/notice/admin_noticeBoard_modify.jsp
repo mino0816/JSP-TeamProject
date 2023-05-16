@@ -1,4 +1,4 @@
-
+ 
 <%@page import="project.util.UtilMgr"%>
 <%@page import="project.noticeBoard.NoticeBoardBean"%>
 <%@page language="java" contentType="text/html; charset=UTF-8"%>

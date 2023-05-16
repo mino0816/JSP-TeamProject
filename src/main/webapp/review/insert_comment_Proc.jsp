@@ -1,5 +1,5 @@
 <!-- 댓글달기 -->
-<!-- review_detaile.jsp에서 건너옴 -->
+<!-- review_detaile.jsp에서 건너옴 --> 
 <%@page contentType="text/html; charset=UTF-8"%>
 <%request.setCharacterEncoding("UTF-8");%>
 <jsp:useBean id="mgr" class="project.comment.CommentMgr"/>

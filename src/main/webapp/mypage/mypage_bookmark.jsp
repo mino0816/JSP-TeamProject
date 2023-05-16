@@ -8,7 +8,7 @@
 <jsp:useBean id="bbean" class="project.bookmark.BookmarkBean"/>
 <jsp:useBean id="bmgr" class="project.bookmark.BookmarkMgr"/>
 
-<%	
+<%	 
 	if(session.getAttribute("user_id")==null){
 	    response.sendRedirect("../membership/main_login.jsp");
 	    return;

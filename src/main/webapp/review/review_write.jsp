@@ -2,7 +2,7 @@
 <%@page contentType="text/html; charset=UTF-8"%>
 <jsp:useBean id="rmgr" class="project.review.ReviewMgr"/>
 <jsp:useBean id="bean" class="project.review.ReviewBean"/>
-
+ 
 
 <!DOCTYPE html>
 <html lang="ko">
@@ -76,41 +76,52 @@
     </section>
     
     
-    <section id="content">       
-    
-    <form action="review_write_proc.jsp?rest_id=<%=request.getParameter("url")%>" method="post" name="reviewFrm" enctype="multipart/form-data">
-    <!-- <form action="javascript:myFunction()" method="post" name="reviewFrm" enctype="multipart/form-data"> -->
-    <!-- <form action="review_write_proc.jsp" method="post" name="reviewFrm"> -->
-           
-        <article class="review_write">
-            <div class="wrap">
-                <div class="review_write_header">
-                    <img src="../img/icons/pencil.png" alt="edit">
-                    <p>리뷰 작성</p>
-                </div>
-                <hr>
-                
-         <div class="review_img">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                        
-                        
-                            <div class="swiper-slide">
-                                <img src="../img/icons/menu2.png" alt="menu" name="img1" id="img1" onclick="clickImage('fileInput1')" style="cursor:pointer;">
-                                <input type="file" name="fileInput1" id="fileInput1" style="display:none" onchange="changeImage('fileInput1', 'img1')">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="../img/icons/menu2.png" alt="menu" name="img2" id="img2" onclick="clickImage('fileInput2')" style="cursor:pointer;">
-                                <input type="file" name="fileInput2" id="fileInput2" style="display:none" onchange="changeImage('fileInput2', 'img2')">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="../img/icons/menu2.png" alt="menu" name="img3" id="img3" onclick="clickImage('fileInput3')" style="cursor:pointer;">
-                                <input type="file" name="fileInput3" id="fileInput3" style="display:none" onchange="changeImage('fileInput3', 'img3')">
-                            </div>
-                            
-	<!-- 파일업로드를 사용할 시 오류가 없게 하려면 request 객체가 아니라 MultipartRequest의 객체로 parameter를 받아야 됨 -->
-                      
-                      <script type="text/javascript">
+    <section id="content">
+
+		<form
+			action="review_write_proc.jsp?rest_id=<%=request.getParameter("url")%>"
+			method="post" name="reviewFrm" enctype="multipart/form-data">
+			<!-- <form action="javascript:myFunction()" method="post" name="reviewFrm" enctype="multipart/form-data"> -->
+			<!-- <form action="review_write_proc.jsp" method="post" name="reviewFrm"> -->
+
+			<article class="review_write">
+				<div class="wrap">
+					<div class="review_write_header">
+						<img src="../img/icons/pencil.png" alt="edit">
+						<p>리뷰 작성</p>
+					</div>
+					<hr>
+
+					<div class="review_img">
+						<div class="swiper mySwiper">
+							<div class="swiper-wrapper">
+
+
+								<div class="swiper-slide">
+									<img src="../img/icons/menu2.png" alt="menu" name="img1"
+										id="img1" onclick="clickImage('fileInput1')"
+										style="cursor: pointer;"> <input type="file"
+										name="fileInput1" id="fileInput1" style="display: none"
+										onchange="changeImage('fileInput1', 'img1')">
+								</div>
+								<div class="swiper-slide">
+									<img src="../img/icons/menu2.png" alt="menu" name="img2"
+										id="img2" onclick="clickImage('fileInput2')"
+										style="cursor: pointer;"> <input type="file"
+										name="fileInput2" id="fileInput2" style="display: none"
+										onchange="changeImage('fileInput2', 'img2')">
+								</div>
+								<div class="swiper-slide">
+									<img src="../img/icons/menu2.png" alt="menu" name="img3"
+										id="img3" onclick="clickImage('fileInput3')"
+										style="cursor: pointer;"> <input type="file"
+										name="fileInput3" id="fileInput3" style="display: none"
+										onchange="changeImage('fileInput3', 'img3')">
+								</div>
+
+								<!-- 파일업로드를 사용할 시 오류가 없게 하려면 request 객체가 아니라 MultipartRequest의 객체로 parameter를 받아야 됨 -->
+
+								<script type="text/javascript">
                       	function clickImage(inputId){
                     	  document.getElementById(inputId).click(); <!-- 이미지를 클릭하면 파일업로드가 연계되어 작동함  -->
                     	}        
@@ -124,31 +135,32 @@
                       	      reader.readAsDataURL(input.files[0]);
                       	    }
                       	  }
-                      </script>      
-                            
-                            
-                         </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-                <hr>
-                <div class="review_title">
-                	<!-- <textarea placeholder="제목" id="title" name="title"></textarea> -->
-                	<!-- <input type="text" placeholder="제목" id="title" name="title"> -->
-                	<input placeholder="제목" id="title_post" name="title_post">
-                </div>
-                <hr>
-                <div class="review_content">
-                	<!-- <textarea placeholder="내용을 작성해주세요" id="content" name="content"></textarea> -->
-                	<!-- <input type="text" placeholder="내용을 작성해주세요" id="content" name="content"> -->
-                	<input placeholder="내용을 작성해주세요" id="content_post" name="content_post">
-                </div>
-                <hr>
-                <input type="submit" class="sub_btn" value="리뷰 작성하기">
-            </div>
-        </article>
-   		 </form>
-    </section>
+                      </script>
+
+
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+					<hr>
+					<div class="review_title">
+						<!-- <textarea placeholder="제목" id="title" name="title"></textarea> -->
+						<!-- <input type="text" placeholder="제목" id="title" name="title"> -->
+						<input placeholder="제목" id="title_post" name="title_post">
+					</div>
+					<hr>
+					<div class="review_content">
+						<!-- <textarea placeholder="내용을 작성해주세요" id="content" name="content"></textarea> -->
+						<!-- <input type="text" placeholder="내용을 작성해주세요" id="content" name="content"> -->
+						<input placeholder="내용을 작성해주세요" id="content_post"
+							name="content_post">
+					</div>
+					<hr>
+					<input type="submit" class="sub_btn" value="리뷰 작성하기">
+				</div>
+			</article>
+		</form>
+	</section>
     
     
     <section id="footer">

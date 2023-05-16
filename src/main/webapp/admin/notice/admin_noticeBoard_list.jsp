@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="ko">
 <%@page import="project.restInfo.RestInfoBean"%>
 <%@page import="project.util.UtilMgr"%>

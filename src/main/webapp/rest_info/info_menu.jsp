@@ -1,4 +1,4 @@
-<%@page import="project.util.UtilMgr"%>
+<%@page import="project.util.UtilMgr"%> 
 <%@page import="project.restInfo.RestInfoBean"%>
 <%@page import="project.restInfo.RestInfoMgr"%>
 <%@page import="project.bookmark.BookmarkMgr"%>

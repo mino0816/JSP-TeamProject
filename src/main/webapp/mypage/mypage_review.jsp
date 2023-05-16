@@ -7,7 +7,7 @@
 <jsp:useBean id="rbean" class="project.review.ReviewBean"/>    
 <jsp:useBean id="mbean" class="project.membership.MemberBean"/>    
 
-
+ 
 <%
 	if(session.getAttribute("user_id")==null){
 	    response.sendRedirect("../membership/main_login.jsp");
