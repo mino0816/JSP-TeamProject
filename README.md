@@ -6,7 +6,7 @@
 ---
 
 #### 언어 : JAVA(JDK 11), HTML/CSS, JavaScript
-#### Apache Tomcat : 8.0
+#### 서버 : Apache Tomcat : 8.0
 #### DB : MySQL
 #### IDE : Eclipse, HeidiSQL
 ----
